@@ -2,7 +2,7 @@ package denemeler;
 
 import java.util.Scanner;
 
-public class soru_4 {
+public class soru_4arasindakiharfler {
 
 	public static void main(String[] args) {
 

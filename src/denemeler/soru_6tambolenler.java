@@ -2,7 +2,7 @@ package denemeler;
 
 import java.util.Scanner;
 
-public class soru_6 {
+public class soru_6tambolenler {
 
 	public static void main(String[] args) {
 

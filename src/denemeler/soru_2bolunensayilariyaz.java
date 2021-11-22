@@ -1,6 +1,6 @@
 package denemeler;
 
-public class soru_2 {
+public class soru_2bolunensayilariyaz {
 
 	public static void main(String[] args) {
 
