@@ -2,9 +2,10 @@ package day09_Arrays;
 
 import java.util.Arrays;
 
-public class Main {
+public class Main_Deneme {
 
-    public void karakterSayaci(String str) { 
+    @SuppressWarnings("unused")
+	public static void karakterSayaci(String str) { 
         if (str == null) 
         return; 
         String[] karakterDizisi = {"a","b","c","ç","d","e","f","g","ğ","h","ı","i","j","k","l","m","n","o","ö", 
@@ -35,7 +36,7 @@ public class Main {
  
     } 
     public static void main(String[] args) { 
-        new Main().karakterSayaci("Araba"); 
-        new Main().karakterSayaci("Ankara");
+        karakterSayaci("Araba"); 
+        karakterSayaci("Ankara");
     }
 }
