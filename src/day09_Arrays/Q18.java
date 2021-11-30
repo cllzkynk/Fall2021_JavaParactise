@@ -1,3 +1,4 @@
+
 package day09_Arrays;
 
 import java.util.Arrays;
@@ -22,16 +23,16 @@ public class Q18 {
 		// String str="Javacilar cook afilli";
 		String arr[] = str.split("");
 		// Arrays.sort(arr);
-		 System.out.println("girilen ifadenin charlara ayrilip array haline ilk geldigi an==>"+Arrays.toString(arr)); // 
+		// System.out.println("girilen ifadenin charlara ayrilip array haline ilk geldigi an==>"+Arrays.toString(arr)); // 
 
 		// tekle(arr);
 		String tek = tekle(arr);
 		String tekliarr[] = tek.split("");
 
-System.out.println("Tekrarli harfleri attiktan sonra kalan tekil harfler==>"+Arrays.toString(tekliarr));	
+//System.out.println("Tekrarli harfleri attiktan sonra kalan tekil harfler==>"+Arrays.toString(tekliarr));	
 
 		String nihayi = adetSay(tekliarr, arr);
-System.out.println("Sirasiyla harflerin adetleri==>"+adetSay(tekliarr,arr));
+//System.out.println("Sirasiyla harflerin adetleri==>"+adetSay(tekliarr,arr));
 
 		String nihayet[] = new String[tek.length()];
 
