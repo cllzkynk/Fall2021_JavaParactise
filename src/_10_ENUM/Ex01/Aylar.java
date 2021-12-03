@@ -1,7 +1,7 @@
 package _10_ENUM.Ex01;
 
 public enum Aylar {
-    //enum yaoısı class degildir. main method icermez. fields'lar ,ile yazilir
+    //enum yapisi class degildir. main method icermez. fields'lar ,ile yazilir
     OCAK,
     SUBAT,
     MART,

@@ -4,15 +4,15 @@ public class Ex01Main {
     public static void main(String[] args) {
         //verilen ay nosuna gore ayin kacgun oldg yazdiriniz...
         //int ay = 5;
-        Aylar ay=Aylar.KASIM;
+        Aylar ay=Aylar.KASIM; 
 
         System.out.println("ay"+ay);
         System.out.println("ay.name() = " + ay.name());
-        System.out.println("ay sırasi = " + ay.ordinal());//enum yapısındaki ay obj index sırası :10
+        System.out.println("ay sırasi = " + ay.ordinal());//enum yapisindaki ay obj index sirasi :10
         switch (ay) {
 
 
-            case OCAK://girin ay yıldaki sırası
+            case OCAK://girin ay yildaki sirası
                 System.out.println("ocak");
                 break;
             case SUBAT:
@@ -30,6 +30,8 @@ public class Ex01Main {
             case KASIM:
                 System.out.println("iyiki dogdun oguzhan kardesssss");
                 break;
+		default:
+			break;
         }
     }
 }

@@ -8,7 +8,8 @@ import java.util.List;
 
 public class ArrayListdMethods {
 
-	 public static void main(String[] args) {
+	 @SuppressWarnings({ "unused", "unlikely-arg-type", "serial" })
+	public static void main(String[] args) {
 		    /*
 		     Array List genel Tanimi:
 		​
