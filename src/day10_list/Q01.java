@@ -21,8 +21,18 @@ public class Q01 {
          // list1.add("Ayse");
          // list1.add("Fatma");
          // list1.add("Omer");
-      
 		
+		int sayi1=5;
+		int sayi2=6;
+      if(sayi1>sayi2) System.out.println();
+      
+      if (sayi1<10)  System.out.println("bakin cokt gerekli degilmis");
+		
+      
+      
+      
+      
+	/*	
 		List<String> list1 = new ArrayList<>(Arrays.asList("Ali","Veli","Ayse","Fatma","Omer"));
         List<String> list2 = new ArrayList<>();
         for (String w : list1) {
@@ -31,4 +41,7 @@ public class Q01 {
             }
         }
         System.out.println(list2);}
+}*/
+      
+	}
 }
