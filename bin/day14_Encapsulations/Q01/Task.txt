@@ -1,0 +1,10 @@
+
+
+
+          1- filedlari(encapsulated) model(String), renk(String), motor(int), yil (int)
+            olan Araba  isimli bir class cretae ediniz.
+          2- butun fieldlari parametre alan bir constructor tanimlayiniz.
+          3- ArabaMain isminde main icin bir class olusturunuz.
+          4- Iki adet parametreli const 1 adet parametresiz cons ile 3 adet araba creat ediniz
+          5- araclarin motor gucunu 100 beygir ve ustu olmasi ve yilini hatali veri girisine karsi kontrol ediniz.
+

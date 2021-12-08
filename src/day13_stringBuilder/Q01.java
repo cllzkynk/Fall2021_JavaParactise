@@ -1,5 +1,7 @@
 package day13_stringBuilder;
 
+import java.util.Scanner;
+
 public class Q01 {
     public static void main(String[] args) {
 		/*
@@ -11,7 +13,18 @@ public class Q01 {
 	        It is not a palindrome"
 
 		 */
+        Scanner scan = new Scanner(System.in);
+        System.out.println("bir metin giriniz");
+        String metin = scan.nextLine();
+        StringBuilder sB = new StringBuilder(metin);
+        // StringBuilder  sB=new StringBuilder(scan.nextLine();
+        //sB.append(metin);
 
+        String tersMetin = sB.reverse().toString();
+
+        if (tersMetin.equalsIgnoreCase(metin)) {
+            System.out.println("girilen metin polindrome ifadedir : " + tersMetin);
+        } else System.out.println("girilen metin polindrome ifde degildir : " + tersMetin);
     }
 
 }
