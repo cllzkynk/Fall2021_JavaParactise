@@ -58,7 +58,15 @@ public class Emlak {
 	public void setStokDurumu(String StokDurumu) {
 		this.StokDurumu = StokDurumu;
 	}
-
+	Emlak(double ListeNo, String evTipi, String il, int odaSayisi, double fiyat, String StokDurumu ) {
+		this.listeNo=(int)ListeNo;
+		this.evTipi=evTipi;
+		this.il=il;
+		this.odaSayisi=odaSayisi;
+		this.fiyat =fiyat;
+		this.StokDurumu = StokDurumu;
+		
+	}
 	Emlak(int ListeNo, String evTipi, String il, int odaSayisi, double fiyat, String StokDurumu) {
 		
 		Scanner scan = new Scanner(System.in);
@@ -85,8 +93,11 @@ public class Emlak {
 	}
 
 	public void ListeleEmlak() {
-		System.out.println("\nListe no      :"+ listeNo +"\nEv tipi    : "+evTipi+"\nil   :"+ il 
-				+"\n oda sayisi : "+odaSayisi+ "\nFiyat : "+fiyat+ "\nStok Durumu : "+StokDurumu);
+		System.out.println("\nListe no    : "+ listeNo +"\nEv tipi     : "+evTipi+"\nil          : "+ il 
+				+"\noda sayisi  : "+odaSayisi+ "\nFiyat       : "+fiyat+ "\nStok Durumu : "+StokDurumu);
 	}
 
+	
+	
+	
 }

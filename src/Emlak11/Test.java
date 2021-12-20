@@ -10,8 +10,7 @@ import java.util.Scanner;
  * @author CELÄ°L
  */
 public class Test {
-	 
-	
+
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		String evTipi = null;
@@ -19,13 +18,13 @@ public class Test {
 		int odaSayisi = 0;
 		double fiyat = 0;
 		double total = 0; // toplam elimizdeki evlerin degeri ( Servetimizi gorelim )
-		 ArrayList<Emlak> envanter = new ArrayList<>();
-	 
-		//Scanner scan = new Scanner(System.in);
+		ArrayList<Emlak> envanter = new ArrayList<>();
+
+		// Scanner scan = new Scanner(System.in);
 
 		/*
 		 * System.out.println("\t\t\t\t _______________________________________" +
-		 * "\n\t\t\t\t/\\\t\t\t\t\t|\n\t\t\t       /  \\\tð?“¢ð?“˜ð?“›ð?“? ð?“”ð?“œð?“›ð?“?ð?“š \t\t\t|\n\t\t\t      /    \\\tð?“¢ð?“˜ð?“’ð?“?ð?“š ð?“‘ð?“˜ð?“¡ ð?“¨ð?“¤ð?“¥ð?“? ð?“˜ð?“’ð?“˜ð?“?\t\t|\n\t\t\t   "
+		 * "\n\t\t\t\t/\\\t\t\t\t\t|\n\t\t\t       /  \\\tï¿½?ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½?ï¿½? ï¿½?ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½?ï¿½?ï¿½?ï¿½ï¿½ \t\t\t|\n\t\t\t      /    \\\tï¿½?ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½?ï¿½?ï¿½?ï¿½ï¿½ ï¿½?ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½?ï¿½ï¿½ ï¿½?ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½?ï¿½? ï¿½?ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½?ï¿½?\t\t|\n\t\t\t   "
 		 * + "  /      \\\t\t\t\t\t|" +
 		 * "\n\t\t\t     --------------------------------------------" +
 		 * "\n\t\t\t    |        |\t\t _______\t\t|" +
@@ -36,13 +35,12 @@ public class Test {
 		 * "\n\t\t\t    |        |\t\t\t\t\t|" +
 		 * "\n\t\t\t    ---------------------------------------------");
 		 */
-		
+
 		while (true) {
-		
 
 			System.out.print("\n1-Ekle \n2-Listele \n3-Cik \nSecenek:");
 
-			int secenek =scan.nextInt();
+			int secenek = scan.nextInt();
 
 			if (secenek == 1) { // Switch case de deneyebilirsiniz secenek az oldugundan ifle yurumek istedim
 
@@ -66,10 +64,11 @@ public class Test {
 				System.out.println("Yine bekleriz..");
 				break;
 
-			}else {
+			} else {
 				System.out.println("yanlis giris yaptiniz lutfen tekrar deneyiniz");
 			}
 		}
-scan.close();	}
+		scan.close();
+	}
 //Emlak emlak = new Emlak(++listeNo,evTipi, il, odaSayisi, fiyat, stokDurumu);
 }

@@ -24,6 +24,7 @@ public class EmlakRunner {
 	static ArrayList<Emlak> satilanlar = new ArrayList<>();
 
 	public static void main(String[] args) {
+		
 
 		String sifre = "";
 		String id = "";
@@ -31,16 +32,18 @@ public class EmlakRunner {
 
 		while (girisBasariliMi) {
 			System.out.println("SILA EMLAK iyi gunler diler");
-			System.out.println("ID : ");
+			System.out.print("ID : ");
 			id = scan.next();
-			System.out.println("Sifre :");
+			System.out.print("Sifre :");
 			sifre = scan.next();
 
 			if (id.equals(patronId) && sifre.equals(patronSifre)) {
 				girisBasariliMi = false;
+				TopluEkleme(envanter);
 				patron();
 			} else if (id.equals(calisanId) && sifre.equals(calisanSifre)) {
 				girisBasariliMi = false;
+				TopluEkleme(envanter);
 				calisan();
 			} else {
 				System.out.println("Giris basarisiz");
@@ -54,7 +57,7 @@ public class EmlakRunner {
 		System.out.println("Gunaydim emekci");
 
 		while (true) {
-			System.out.println("\n1-Ekle \n2-Listele \n3-Cikis  satisi gor  \nSecenek : ");
+			System.out.print("\n1-Ekle \n2-Listele \n3-Cikis  satisi gor  \nSecenek : ");
 			int secenek = scan.nextInt();
 
 			switch (secenek) {
@@ -89,7 +92,7 @@ public class EmlakRunner {
 
 		while (true) {
 
-			System.out.println("\n1-ekle  \n2-Listele  \n3-Sil \n4-Duzenle \n5-Cik \n6-Aylik satisi gor  \nSecenek  :");
+			System.out.print("\n1-ekle  \n2-Listele  \n3-Sil \n4-Duzenle \n5-Cik \n6-Aylik satisi gor  \nSecenek  :");
 			int secenek = scan.nextInt();
 
 			switch (secenek) {
@@ -109,7 +112,7 @@ public class EmlakRunner {
 				break;
 			case 3:
 				System.out.println("O sattin satin heral mali Liste noyu gir");
-				int silenen = scan.nextInt() - 100;
+				int silenen = scan.nextInt()-100;
 				satilanlar.add(envanter.get(silenen));
 				envanter.remove(silenen);
 
@@ -163,9 +166,9 @@ System.out.println("Gule gule");
 				
 				for (int i = 0; i < satilanlar.size(); i++) {
 					
-					System.out.println("\nListe no      :"+ satilanlar.get(i).getListeNo() +"\nEv tipi    : "+satilanlar.get(i).getEvTipi()+
-							"\nil   :"+ satilanlar.get(i).getIl() 
-							+"\n oda sayisi : "+satilanlar.get(i).getOdaSayisi()+ "\nFiyat : "+satilanlar.get(i).getOdaSayisi()+ "\nStok Durumu "
+					System.out.println("\nListe no    :"+ satilanlar.get(i).getListeNo() +"\nEv tipi      : "+satilanlar.get(i).getEvTipi()+
+							"\nil        :"+ satilanlar.get(i).getIl() 
+							+"\noda sayisi  : "+satilanlar.get(i).getOdaSayisi()+ "\nFiyat       : "+satilanlar.get(i).getOdaSayisi()+ "\nStok Durumu "
 									+ ": "+satilanlar.get(i).StokDurumu);
 				}
 				
@@ -181,5 +184,19 @@ System.out.println("Gule gule");
 		}
 
 }
+	
+	public static void TopluEkleme(ArrayList<Emlak>  envanter2) {
+		Emlak emlak1 = new Emlak(++ListeNo+0.0, "Villa", "Antalya", 5, 2000000, "Satilik");
+		envanter2.add(emlak1);
+		Emlak emlak2 = new Emlak(++ListeNo+0.0, "Yazlik", "Mugla", 4, 1500000, "Kiralik");
+		envanter2.add(emlak2);
+		Emlak emlak3 = new Emlak(++ListeNo+0.0, "Daire", "Ankara", 3, 500000, "Satilik");
+		envanter2.add(emlak3);
+		Emlak emlak4 = new Emlak(++ListeNo+0.0, "Mustakil", "Bartin", 4, 200000, "Kiralik");
+		envanter2.add(emlak4);
+		Emlak emlak5 = new Emlak(++ListeNo+0.0, "Studyo", "Istanbul", 1, 250000, "Satilik");
+		envanter2.add(emlak5);
+		
+	}
 
 }
