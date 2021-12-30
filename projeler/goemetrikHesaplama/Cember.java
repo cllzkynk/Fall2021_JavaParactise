@@ -2,11 +2,11 @@ package goemetrikHesaplama;
 
 public class Cember extends Sekil {
 
-	double yariCap;
+ 
 
 	public Cember(double yariCap) {
 		super(yariCap);
-		this.yariCap = yariCap;
+	 
 	}
 
 	public double cevreHesaplama() {

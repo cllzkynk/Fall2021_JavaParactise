@@ -9,8 +9,8 @@ public class Kare extends Dikdortgen {
 
 	@Override
 	public String toString() {
-		return "\nKARE\nUzunKenar ==>" + uzunKenar + "\nKisaKenar ==>" + kisaKenar + " \nCevre     ==>"
-				+ cevreHesaplama() + "\nAalan     ==>" + alanHesaplama();
+		return "\nKARE\nKenar1 ==>" + uzunKenar + "\nKenar2 ==>" + kisaKenar + " \nCevre  ==>"
+				+ cevreHesaplama() + "\nAalan  ==>" + alanHesaplama();
 	}
 
 }

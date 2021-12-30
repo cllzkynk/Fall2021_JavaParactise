@@ -26,8 +26,8 @@ public class Dikdortgen extends Sekil {
 
 	@Override
 	public String toString() {
-		return "\nDIKDORTGEN\nuzunKenar ==>" + uzunKenar + "\nKisaKenar ==>" + kisaKenar + "\nCevre     ==>"
-				+ cevreHesaplama() + "\nAlan      ==>" + alanHesaplama();
+		return "\nDIKDORTGEN\nKenar1 ==>" + uzunKenar + "\nKenar2 ==>" + kisaKenar + "\nCevre  ==>"
+				+ cevreHesaplama() + "\nAlan   ==>" + alanHesaplama();
 	}
 
 }
